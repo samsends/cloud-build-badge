@@ -19,9 +19,7 @@ export BADGE="PATH_TO_PUBLIC_BADGE" // e.g. cbb-master-badge
 ```
 **copy and run**
 
-`git clone https://github.com/sbsends/cloud-build-badge.git && cd cloud-build-badge \
-sed -i.tmp -e "s/\${repo}/$REPO/" -e "s/\${branch}/$BRANCH/" -e "s/\${bucket}/$BUCKET/" -e "s/\${branch}/$BADGE/" index.js \
-&& rm index.js.tmp \
+`git clone https://github.com/sbsends/cloud-build-badge.git && cd cloud-build-badge && sed -i.tmp -e "s/\${repo}/$REPO/" -e "s/\${branch}/$BRANCH/" -e "s/\${bucket}/$BUCKET/" -e "s/\${badge}/$BADGE/" index.js && rm index.js.tmp &&
 gcloud functions deploy $BADGE --runtime nodejs6 --trigger-resource cloud-builds --trigger-event google.pubsub.topic.publish`
 
 7) Add badge to README.md
