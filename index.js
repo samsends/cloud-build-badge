@@ -5,7 +5,7 @@
  */
 const { Storage } = require('@google-cloud/storage');
 
-exports.cloudBuildBadge = (event, callback) => {
+exports.${badge} = (event, callback) => {
   const pubsubMessage = event.data;
   if  (pubsubMessage.data) {
     buildResource = JSON.parse(Buffer.from(pubsubMessage.data, 'base64').toString())
