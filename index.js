@@ -18,13 +18,13 @@ exports.cloudBuildBadge = (event, callback) => {
       storage.bucket("${bucket}")
       .file("build/success.svg")
       .copy(storage.bucket("tensortask-static")
-      .file("build/badge.svg"));
+      .file("build/${badge}.svg"));
     }
     if (repo && branch && status == "FAILURE") {
       storage.bucket("${bucket}")
       .file("build/failure.svg")
       .copy(storage.bucket("tensortask-static")
-      .file("build/badge.svg"));
+      .file("build/${badge}.svg"));
     }
   }
   callback();
