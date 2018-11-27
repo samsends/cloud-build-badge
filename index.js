@@ -20,12 +20,14 @@ exports.${badge} = (event, callback) => {
         .file("build/success.svg")
         .copy(storage.bucket("${bucket}")
         .file("build/${badge}.svg"));
+        console.log("switched badge to build success")
       }
       if (repo && branch && status == "FAILURE") {
         storage.bucket("${bucket}")
         .file("build/failure.svg")
         .copy(storage.bucket("${bucket}")
         .file("build/${badge}.svg"));
+        console.log("switched badge to build failure")
       }
     }
   }
