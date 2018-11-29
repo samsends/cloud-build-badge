@@ -6,7 +6,7 @@ Add cloud build badges in 2 minutes.
 2) Create a folder in the bucket named `build`.
 3) Download [failure](https://storage.googleapis.com/tensortask-static/build/failure.svg) and [success](https://storage.googleapis.com/tensortask-static/build/success.svg) badges (follow links and save).
 4) Upload both badges to the google storage bucket/folder created in the previous step (e.g. `YOUR_BUCKET/build/success.svg`).
-5) Create a placeholder for your badge (e.g. `YOUR_BUCKET/build/BADGE_ID.svg`.
+5) Create a placeholder for your badge (e.g. `YOUR_BUCKET/build/BADGE_ID.svg` (make permissions public).
 6) Set ENV Variables.
 
 ```bash
