@@ -10,7 +10,7 @@ Add cloud build badges in 2 minutes.
 6) Set ENV Variables.
 
 ```bash
-export REPO="YOUR_REPO" // e.g. github-sbsends-cloud-build-badge
+export REPO="YOUR_REPO" // e.g. github_sbsends_cloud_build_badge
 export BRANCH="YOUR_BRANCH" // e.g. master
 export BUCKET="YOUR_BUCKET" // e.g. my-gcp-bucket
 export BADGE="PATH_TO_PUBLIC_BADGE" // e.g. cbb-master-badge
